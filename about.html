@@ -39,19 +39,22 @@ Author URL: http://w3layouts.com
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav w-100">
           <li class="nav-item @@home__active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item @@causes__active">
             <a class="nav-link" href="programs.html">Programs</a>
           </li>
-          <li class="nav-item @@contact__active">
-            <a class="nav-link" href="contact.html">Contact</a>
+          <li class="nav-item @@Gallery__active">
+            <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="programs.html">Att; Mama Toto</a>
+        </li>
           <li class="align-self">
-            <a href="#donate" class="btn btn-style btn-primary ml-lg-3 mr-lg-2"><span class="fa fa-heart mr-1"></span> Donate</a>
+            <a href="https://chat.whatsapp.com/CFcqxImbpZf2QPJYAEduKJ" class="btn btn-style btn-primary ml-lg-3 mr-lg-2"><span class="fa fa-heart mr-1"></span> Join Us</a>
           </li>
         </ul>
       </div>
@@ -116,7 +119,7 @@ Author URL: http://w3layouts.com
                        At Mama Toto Events, we believe that laughter, connection, and self-discovery are essential ingredients for a fulfilling life. Join us on a journey of empowerment and joy as we create unforgettable experiences designed to nourish your mind, body, and soul. Get ready to embark on a journey of laughter, growth, and sisterhood.</p>
                  </div>
                  <div class="main-midd-2 col-lg-3 mt-lg-0 mt-4 text-lg-right">
-                     <a class="btn btn-style btn-primary" href="https://wa.link/nqwz9m"><span class="fa fa-heart mr-1"></span>Join Us
+                     <a class="btn btn-style btn-primary" href="https://chat.whatsapp.com/CFcqxImbpZf2QPJYAEduKJ"><span class="fa fa-heart mr-1"></span>Join Us
                          Now </a>
                  </div>
              </div>
@@ -142,12 +145,8 @@ Author URL: http://w3layouts.com
                   <div class="footers20-content">
                       <div class="d-grid grid-col-4 grids-content">
                           <div class="column">
-                              <h4>Our Address</h4>
-                                <p>Thika, Kenya</p>
-                          </div>
-                          <div class="column">
                               <h4>Call Us</h4>
-                              <p><a href="tel:+254721989274">0721-989-274</a></p>
+                              <p><a href="tel:+254769109058">+254769109058</a></p>
                           </div>
                           <div class="column">
                               <h4>Mail Us</h4>
@@ -159,10 +158,10 @@ Author URL: http://w3layouts.com
                                   <li><a href="https://www.facebook.com/mamatotoevents"><span class="fa fa-facebook"
                                               aria-hidden="true"></span></a>
                                   </li>
-                                  <li><a href="#"><span class="fa fa-instagram"
+                                  <li><a href="https://www.instagram.com/mamatotoevents/?igsh=MWR0OWZkZXNyOW5zZA%3D%3D"><span class="fa fa-instagram"
                                               aria-hidden="true"></span></a>
                                   </li>
-                                  <li><a href="#"><span class="fa fa-twitter"
+                                  <li><a href="https://www.tiktok.com/@mamatoto254"><span class="fa fa-tiktok"
                                               aria-hidden="true"></span></a>
                               </ul>
                           </div>
@@ -175,31 +174,6 @@ Author URL: http://w3layouts.com
                   </div>
               </div>
           </div>
-          <!-- move top -->
-          <button onclick="topFunction()" id="movetop" title="Go to top">
-              &uarr;
-          </button>
-          <script>
-              // When the user scrolls down 20px from the top of the document, show the button
-              window.onscroll = function () {
-                  scrollFunction()
-              };
-
-              function scrollFunction() {
-                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                      document.getElementById("movetop").style.display = "block";
-                  } else {
-                      document.getElementById("movetop").style.display = "none";
-                  }
-              }
-
-              // When the user clicks on the button, scroll to the top of the document
-              function topFunction() {
-                  document.body.scrollTop = 0;
-                  document.documentElement.scrollTop = 0;
-              }
-          </script>
-          <!-- /move top -->
 
       </footer>
       <!-- Footers-14 -->
@@ -309,6 +283,44 @@ Author URL: http://w3layouts.com
   });
 </script>
 <!-- //disable body scroll which navbar is in active -->
+
+<script>
+  var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?99013';
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = url;
+  var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#00e785",
+      "ctaText":"Message Us",
+      "borderRadius":"25",
+      "marginLeft": "0",
+      "marginRight": "20",
+      "marginBottom": "20",
+      "ctaIconWATI":false,
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"Mama Toto Events",
+      "brandSubTitle":"undefined",
+      "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+      "welcomeText":"Got any questions?\nWe’re here to help.",
+      "messageText":"Hello, %0AI'm on Mama Toto Events website and i would like to join you on this upcoming events.",
+      "backgroundColor":"#00e785",
+      "ctaText":"Message Us",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"254769109058"
+  }
+  };
+  s.onload = function() {
+      CreateWhatsappChatWidget(options);
+  };
+  var x = document.getElementsByTagName('script')[0];
+  x.parentNode.insertBefore(s, x);
+</script>
 
 <!--bootstrap-->
 <script src="assets/js/bootstrap.min.js"></script>
